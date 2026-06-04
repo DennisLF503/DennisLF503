@@ -1,0 +1,110 @@
+/*Diseño general del cuerpo de la página*/
+
+body{
+    margin: 0;
+    font-family: Arial,sans-serif;
+    background: #dee5ed;
+    color: #1f1f1f;
+}
+
+/*Contenedor principal centrado*/
+.contenedor{
+    width: 90%;
+    max-width: 420px;
+    margin: 70px auto;
+}
+
+/*Tarjeta del login y panel de bienvenida*/
+.login-card,.panel{
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgb(0, 0,0,0.12);
+}
+/*titulo*/
+h1, h2{
+    text-align: center;
+    margin-top: 0;
+}
+/*Texto descriptivo*/
+.descripción{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4f4a4a;
+}
+/*Grupo de cada campo*/
+.grupo {
+    margin-bottom: 18px;
+}
+/*etiquetas*/
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+/*campos de entrada*/
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 11px;
+    border:1px solid #dee5ed;
+    border-radius: 8px;
+    font-size: 15px;
+}
+/* efecto al seleccionar un campo*/
+input:focus{
+    outline: none;
+    border-color: #252525;
+}
+/*Opciones del formulario*/
+.opciones{
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+/*checkbox*/
+.opciones input{
+    margin-right: 6px;
+}
+/*Botones*/
+button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*Efecto hover del botón*/
+button:hover{
+    background: #1e40af;
+}
+/*Mensaje de error*/
+.error{
+    display: block;
+    color:#dc2626;
+    font-size: 13px;
+    margin-top: 5px;
+}
+/*mensaje general*/
+.mensaje{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+/*Campo correcto*/
+.correcto{
+    border-color: #16a3;
+}
+/*Campo incorrecto*/
+.incorrecto{
+    border-color: #dc2626;
+}
+/*Ocultar elementos*/
+.oculto{
+    display: none;
+}
+/*Reinicio básico de márgenes y modelo de caja*/
+*{
+    box-sizing: border-box;
+}

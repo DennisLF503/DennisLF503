@@ -1,0 +1,108 @@
+/* Aplica un cálculo mas orientado de tamaños*/
+*{
+    box-sizing: border-box;
+}
+
+/*Estilo generales del cuerpo de la página */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: azure;
+    color:black
+}
+/* las imágenes no se salen de su contenedor */
+img{
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+/*Encabezado principal */
+.encabezado {
+    background-color: #0d47a1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/*Navegación en columna para celular*/
+nav{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 15px;
+}
+/*Estilo de enlaces del menú*/
+nav a {
+    color:white;
+    text-decoration: none;
+    background-color: rgb(17, 17, 39);
+    padding: 10px;
+    border-radius: 6px;
+}
+/*sección principal*/
+.hero {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
+}
+/*botón principal*/
+.boton{
+    display: inline-block;
+    background-color: #0d47a1;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+/* Sección de servicios*/
+.seccion-servicios{
+    padding: 30px 20px;
+}
+/*Contenedor de tarjetas en columna para celular*/
+.contenedor-tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*Tarjeta individual*/
+.tarjeta{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgb(0,0,0,0.15);
+}
+/*Títutlo dentro de la tarjeta*/
+.tarjeta h3{
+    color: rgb(16, 16, 98);
+}
+/*Pie de página*/
+footer{
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+/*Estilos para pantalla medianas o grandes*/
+/*Cuando la pantalla mida 768 pixeles o más, las 
+tarjetas cambiarán de columna o fila*/
+
+@media(min-width: 768px){
+    /*El menú cambia de columna a fila*/
+    nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* La sección principal gana más espacio*/
+    .hero{
+        padding: 60px 80px;
+    }
+    /* Las tarjetas cambian de columna a fila*/
+    .contenedor-tarjetas{
+        flex-direction: row;
+    }
+    /* Cada tarjeta ocupe el mismo espacio*/
+    .tarjeta{
+        flex:1;
+    }
+}

@@ -1,0 +1,92 @@
+/* Estilo general de toda la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Encabezado principal */
+.encabezado {
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Enlaces del menú */
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor general de la página */
+.contenedor {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    background-color:white ;
+}
+
+/* Área principal del contenido */
+.contenido-principal {
+    flex: 3;
+}
+
+/* Barra lateral */
+.barra-lateral {
+    flex: 1;
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Secciones de contenido */
+.seccion {
+    background-color: red;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas {
+    display: flex;
+    gap: 15px;
+}
+
+/* Cada tarjeta individual */
+.tarjeta {
+    background-color: #e9eef7;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+/* Títulos secundarios */
+h2 {
+    color: #0b3d91;
+}
+
+/* Pie de página */
+.pie {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

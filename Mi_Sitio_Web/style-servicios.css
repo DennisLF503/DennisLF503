@@ -1,0 +1,14 @@
+.encabezado-servicios{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 40px;
+    text-align: center;
+}
+.contenedor-servicios {
+    background-color: cadetblue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}

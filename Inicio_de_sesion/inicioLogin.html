@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con DOM</title>
+    <link rel="stylesheet" href="estiloLogin.css">
+    <script src="scriptLogin.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <section class="login-card" id ="logincard">
+            <h1>Inicio de sesión</h1>
+              <p> Elije tu Rol en esta prueba Avanzo</p>
+            <form action="/procesar" method="post">
+            <label for="rol">Selecciona tu rol:</label>
+            <select name="rol" id="rol" required>
+            <option value="">Selecciona </option>
+            <option value="admin">Administrador</option>
+            <option value="editor">Estudiante</option>
+         <option value="usuario">Docente</option>
+  </select>
+                </ul>
+            </select>
+            <p class ="descripción">Ingrese sus credenciales para acceder al sistema</p>
+            <!--formulario de acceso-->
+            <form id="formLogin">
+                <div class="grupo">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" placeholder="Ingrese su usuario">
+                    <small id="errorUsuario" class="error"></small>
+                </div>
+                <div class="grupo">
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" id="clave" placeholder="Ingrese su contraseña">
+                    <small id="errorClave" class="error"> </small>
+                </div>
+                <div class="opciones">
+                    <label>
+                        <input type="checkbox" id="mostrarClave">
+                        Mostrar contraseña
+                    </label>
+                </div>
+                <button type="submit">Ingresar</button>
+                <p id="mensajeGeneral" class="mensaje"></p>
+            </form>
+        </section>
+        <!--Panel que se mostrará si el usuario ingresa correctamente-->
+        <section class="panel oculto" id="panelBienvenida">
+            <h2>Acceso concedido</h2>
+            <p>Bienvenido/a, <strong id="nombreUsuario"></strong>
+            </p>
+            <button id="btnCerrarSesion">Cerrar sesión</button>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Panel de seguimiento de tareas</h1>
+        <p>
+            Esta herramienta permite registrar tareas de un proyecto web,
+            asignar responsables y definir prioridades.
+        </p>
+        <section class="formulario">
+            <h2>Registrar nueva tarea</h2>
+            <form id="formTarea">
+                <label for="tarea">Nombre de la tarea:</label>
+                <input type="text" id="tarea" placeholder="Ejemplo: Crear menú principal">
+                <label for="responsable">Responsable:</label>
+                <input type="text" id="responsable" placeholder="Nombre del responsable">
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad">
+                    <option value="">Seleccione una prioridad</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                </select>
+                <button type="submit">Agregar tarea</button>
+            </form>
+            <p id="mensaje"></p>
+        </section>
+        <section class="listado">
+            <h2>Tareas registradas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarea</th>
+                        <th>Responsable</th>
+                        <th>Prioridad</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaTareas">
+                    <!-- Aquí aparecerán las tareas agregadas con JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

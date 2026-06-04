@@ -1,0 +1,289 @@
+/*estilo general de la pagina*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #012b11;
+}
+
+/*encabezado*/
+.encabezado {
+    background: linear-gradient(135deg, #057e29, #8c0e0e);
+    color: white;
+    text-align: center;
+    padding: 30px 20px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.encabezado h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 6px;
+}
+
+/*contenedor principal de la pagina*/
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.descripcion {
+    background-color: #e8f0fe;
+    border: 2px solid #1a56db;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    color: #2d3748;
+}
+
+/*formulario*/
+.formulario {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px color rgb(0, 0, 0);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.formulario h2 {
+    color: #03411d;
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+}
+
+.campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #0c7515;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #000000;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #053819;
+    background-color: #ffffff;
+}
+
+/*botones*/
+#btnAgregar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #084222;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#btnAgregar:hover {
+    background-color: #1547c0;
+    transform: translateY(-1px);
+}
+
+#btnAgregar:active {
+    transform: translateY(0);
+}
+
+#btnLimpiar {
+    padding: 7px 14px;
+    background-color: #920000;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btnLimpiar:hover {
+    background-color: #c53030;
+}
+
+/*mensaje de validacion*/
+#mensaje {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    min-height: 22px;
+}
+
+/*el listado de tareas*/
+.listado {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.listado-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.listado-encabezado h2 {
+    color: #1a56db;
+    font-size: 1.2rem;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contador {
+    background-color: #ebf4ff;
+    color: #1a56db;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+}
+
+/*tabla*/
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+}
+
+th {
+    background-color: #1a56db;
+    color: white;
+    padding: 11px 14px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #f7faff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fb;
+}
+
+/*colores de la prioridad*/
+.prioridad-alta {
+    background-color: #fed7d7;
+    color: #c53030;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+.prioridad-media {
+    background-color: #fefcbf;
+    color: #b7791f;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+.prioridad-baja {
+    background-color: #c6f6d5;
+    color: #276749;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    display: inline-block;
+}
+
+/*colores del estado de la tarea*/
+.estado-pendiente {
+    color: #718096;
+    font-style: italic;
+}
+
+.estado-proceso {
+    color: #2b6cb0;
+    font-weight: bold;
+}
+
+.estado-finalizada {
+    color: #276749;
+    font-weight: bold;
+}
+
+/*el pie de la pagina*/
+.pie {
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+    color: #718096;
+    font-size: 0.85rem;
+}
+
+/*responsive*/
+@media (max-width: 600px) {
+    .campos {
+        grid-template-columns: 1fr;
+    }
+
+    .encabezado h1 {
+        font-size: 1.4rem;
+    }
+}
